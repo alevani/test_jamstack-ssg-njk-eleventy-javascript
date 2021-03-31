@@ -8,4 +8,7 @@ layout: base.njk
     <h2>This site is hosted by netflify</h2>
 </div>
 
+{% for article in news.articles%}
+ <p> {{ article.title}} </p>
+{% endfor %}
 <script src="./js/index.js"></script>
