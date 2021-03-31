@@ -6,16 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{title}}</title>
     <style>
-        body {
+        body {
             text-align: center;
         }
-        div container { 
-            width: 400;
+
+        div.container {
+            width: 400px;
             margin: 0 auto;
         }
     </style>
 </head>
 <body>
+    <header>
+        <a href="/">Home</a> | <a href="/about">About</a>
+    </header>
     {{content | safe}}
 </body>
 </html>
